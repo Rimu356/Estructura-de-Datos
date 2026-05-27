@@ -1,0 +1,12 @@
+Algoritmo mostrarMemoria
+    Si tope == NULL Entonces
+        Escribir "Memoria vacía (no hay bloques asignados)"
+        Retornar
+    FinSi
+    actual = tope
+    Escribir "=== Estado actual de la memoria (tope → fondo) ==="
+    Mientras actual != NULL Hacer
+        Escribir "Bloque asignado a: ", actual.proceso.nombre, " (ID ", actual.proceso.id, ")"
+        actual = actual.abajo
+    FinMientras
+FinAlgoritmo
