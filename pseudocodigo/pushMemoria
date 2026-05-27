@@ -1,0 +1,8 @@
+Algoritmo pushMemoria(proceso)
+    // Crear un nuevo nodo para la pila
+    nuevoNodo = nuevo NodoPila
+    nuevoNodo.proceso = proceso	// Asignar el proceso al nuevo nodo
+    nuevoNodo.abajo = tope		// El antiguo tope queda debajo
+    tope = nuevoNodo 			// El nuevo nodo se convierte en el tope
+   Escribir "Memoria asignada exitosamente al proceso: ", proceso.nombre
+FinAlgoritmo
