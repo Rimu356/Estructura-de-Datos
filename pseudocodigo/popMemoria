@@ -1,0 +1,12 @@
+Algoritmo popMemoria
+    Si tope == NULL Entonces
+        Escribir "No hay memoria asignada para liberar"
+        Retornar NULL
+    FinSi
+    aux = tope		// Guardar referencia temporal al nodo a eliminar
+    tope = tope.abajo	// Actualizar el tope al nodo anterior
+    procesoLiberado = aux.proceso
+    Escribir "Liberando memoria del proceso: ", procesoLiberado.nombre
+    Eliminar aux 		// Liberar memoria del nodo
+    Retornar procesoLiberado
+FinAlgoritmo
