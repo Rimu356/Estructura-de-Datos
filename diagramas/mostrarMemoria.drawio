@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="tb_IcbqXMy8NYFP0g7G-">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GAHpdXtAvxt690P5gBbV-3" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="GAHpdXtAvxt690P5gBbV-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="INICIO" vertex="1">
+          <mxGeometry height="40" width="100" x="240" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-23" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="GAHpdXtAvxt690P5gBbV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-26" connectable="0" parent="GAHpdXtAvxt690P5gBbV-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Si" vertex="1">
+          <mxGeometry relative="1" x="-0.4308" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-24" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GAHpdXtAvxt690P5gBbV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-25" connectable="0" parent="GAHpdXtAvxt690P5gBbV-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.5161" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-2" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;¿tope == NULL?&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="235" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-27" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GAHpdXtAvxt690P5gBbV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Escribir &quot;Memoria vacía (no hay bloques asignados)&quot;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="110" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Retornar&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="135" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-6" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" value="FIN" vertex="1">
+          <mxGeometry height="30" width="75" x="142.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-29" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="GAHpdXtAvxt690P5gBbV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;actual = tope&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="350" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-10" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="GAHpdXtAvxt690P5gBbV-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Escribir &quot;=== Estado actual de la memoria (tope → fondo) ===&quot;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="200" x="300" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-14" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GAHpdXtAvxt690P5gBbV-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-19" connectable="0" parent="GAHpdXtAvxt690P5gBbV-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Sí" vertex="1">
+          <mxGeometry relative="1" x="0.5636" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-16" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="GAHpdXtAvxt690P5gBbV-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="372.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-20" connectable="0" parent="GAHpdXtAvxt690P5gBbV-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.2308" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;rounded=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;¿actual != NULL?&lt;/p&gt;" vertex="1">
+          <mxGeometry height="65" width="90" x="355" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-15" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="GAHpdXtAvxt690P5gBbV-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Escribir &quot;Bloque asignado a: &quot;, actual.proceso.nombre, &quot; (ID &quot;, actual.proceso.id, &quot;)&quot;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="175" x="312.5" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-13" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="GAHpdXtAvxt690P5gBbV-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="570" />
+              <mxPoint x="280" y="570" />
+              <mxPoint x="280" y="370" />
+              <mxPoint x="355" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;actual = actual.abajo&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="127.5" x="336.25" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="Fin del mientras" vertex="1">
+          <mxGeometry height="47.5" width="100" x="510" y="348.75" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-21" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" value="FIN" vertex="1">
+          <mxGeometry height="30" width="75" x="522.5" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-22" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="GAHpdXtAvxt690P5gBbV-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GAHpdXtAvxt690P5gBbV-28" edge="1" parent="1" source="GAHpdXtAvxt690P5gBbV-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="GAHpdXtAvxt690P5gBbV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

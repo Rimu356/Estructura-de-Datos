@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ir7J1i7AWu9xsvsECycx">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="04muvCwFk6MCg3w_iScq-5" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="04muvCwFk6MCg3w_iScq-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="INICIO" vertex="1">
+          <mxGeometry height="40" width="100" x="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-19" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="04muvCwFk6MCg3w_iScq-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-22" connectable="0" parent="04muvCwFk6MCg3w_iScq-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Si" vertex="1">
+          <mxGeometry relative="1" x="-0.3538" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-20" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="04muvCwFk6MCg3w_iScq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-21" connectable="0" parent="04muvCwFk6MCg3w_iScq-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.3543" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;¿tope == NULL?&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-23" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="04muvCwFk6MCg3w_iScq-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Escribir &quot;No hay memoria asignada para liberar&quot;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="130" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Retornar NULL&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="155" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-10" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" value="FIN" vertex="1">
+          <mxGeometry height="40" width="85" x="162.5" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-25" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="04muvCwFk6MCg3w_iScq-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;aux = tope&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="360" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-26" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="04muvCwFk6MCg3w_iScq-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;tope = tope.abajo&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="360" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;procesoLiberado = aux.proceso&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="345" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-27" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="04muvCwFk6MCg3w_iScq-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="procesoLiberado = aux.proceso" vertex="1">
+          <mxGeometry height="40" width="120" x="345" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-28" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="04muvCwFk6MCg3w_iScq-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Escribir &quot;Liberando memoria del proceso: &quot;, procesoLiberado.nombre&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="50" width="205" x="302.5" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-29" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="04muvCwFk6MCg3w_iScq-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Eliminar aux&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="352.5" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Retornar procesoLiberado&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="117.5" x="346.25" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-18" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" value="FIN" vertex="1">
+          <mxGeometry height="40" width="85" x="362.5" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-24" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="04muvCwFk6MCg3w_iScq-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="04muvCwFk6MCg3w_iScq-30" edge="1" parent="1" source="04muvCwFk6MCg3w_iScq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="04muvCwFk6MCg3w_iScq-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

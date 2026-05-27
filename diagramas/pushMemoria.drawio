@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ei4G1dlamDMkuLLorQfH">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-9" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xqVc6zW-r0o-tX5eDWnX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="INICIO" vertex="1">
+          <mxGeometry height="40" width="100" x="240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-10" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="xqVc6zW-r0o-tX5eDWnX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Recibir parámetro (proceso)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="165" x="207.5" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-11" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xqVc6zW-r0o-tX5eDWnX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Crear nuevoNodo = nuevo NodoPila&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="217.5" x="181.25" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-14" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xqVc6zW-r0o-tX5eDWnX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;nuevoNodo.proceso = proceso&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="177.5" x="201.25" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-15" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xqVc6zW-r0o-tX5eDWnX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;nuevoNodo.abajo = tope&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="217.5" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-16" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="xqVc6zW-r0o-tX5eDWnX-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;tope = nuevoNodo&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="235" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="&lt;p dir=&quot;auto&quot; style=&quot;white-space: pre-wrap;&quot;&gt;Escribir &quot;Memoria asignada exitosamente al proceso: &quot;, proceso.nombre&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="231.25" x="174.38" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-8" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" value="FIN" vertex="1">
+          <mxGeometry height="40" width="100" x="240" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="xqVc6zW-r0o-tX5eDWnX-17" edge="1" parent="1" source="xqVc6zW-r0o-tX5eDWnX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="xqVc6zW-r0o-tX5eDWnX-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
