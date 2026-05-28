@@ -128,7 +128,6 @@ void cambiarEstadoProceso(
 
         eliminarProceso(idProceso);
 
-        cout << "Proceso finalizado y recursos liberados."
-             << endl;
+        cout << "Proceso finalizado y recursos liberados.";
     }
 }
