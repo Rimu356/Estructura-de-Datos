@@ -1,0 +1,88 @@
+struct NodoProceso {
+
+    int id;
+    string nombre;
+    int prioridad;
+    int memoriaRequerida;
+    string estado;
+
+    NodoProceso* siguiente;
+};
+
+NodoProceso* listaGlobal = NULL;
+
+int contadorID = 1;
+
+//Para generar ID
+int generarIDUnico() {
+
+    return contadorID++;
+}
+
+//Para insertar en nuestra lista global
+void insertarEnListaGlobal(NodoProceso* nuevoProceso) {
+
+    if (listaGlobal == NULL) {
+
+        listaGlobal = nuevoProceso;
+    }
+    else {
+
+        NodoProceso* actual = listaGlobal;
+
+        while (actual->siguiente != NULL) {
+
+            actual = actual->siguiente;
+        }
+
+        actual->siguiente = nuevoProceso;
+    }
+}
+
+//Para simular de forma simple si hay espacio
+bool hayMemoriaDisponible(int memoriaRequerida) {
+
+    return memoriaRequerida <= 500;
+}
+
+//Agregar proceso
+void agregarProceso(
+    string nombre,
+    int prioridad,
+    int memoriaRequerida
+) {
+    NodoProceso* nuevoProceso = new NodoProceso();
+
+    nuevoProceso->id = generarIDUnico();
+
+    nuevoProceso->nombre = nombre;
+
+    nuevoProceso->prioridad = prioridad;
+
+    nuevoProceso->memoriaRequerida = memoriaRequerida;
+
+    nuevoProceso->estado = "NUEVO";
+
+    nuevoProceso->siguiente = NULL;
+
+    insertarEnListaGlobal(nuevoProceso);
+
+    cout << "Proceso registrado correctamente con ID: "
+         << nuevoProceso->id << endl;
+
+
+    if (
+        estaVacia() ||
+        hayMemoriaDisponible(memoriaRequerida)
+    ) {
+
+        cambiarEstadoProceso(
+            nuevoProceso->id,
+            "LISTO"
+        );
+    }
+    else {
+
+        cout << "Proceso registrado, pero en espera por falta de memoria.";
+    }
+}
