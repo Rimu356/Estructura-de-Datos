@@ -1,0 +1,134 @@
+struct NodoPila {
+
+    NodoProceso* proceso;
+    NodoPila* abajo;
+};
+NodoPila* tope = NULL;
+void pushMemoria(NodoProceso* proceso) {
+
+    NodoPila* nuevo = new NodoPila();
+
+    nuevo->proceso = proceso;
+
+    nuevo->abajo = tope;
+
+    tope = nuevo;
+
+    cout << "Memoria asignada al proceso: "
+         << proceso->nombre << endl;
+}
+void popMemoria() {
+
+    if (estaVacia()) {
+
+        cout << "No hay memoria para liberar." << endl;
+
+        return;
+    }
+
+    NodoPila* aux = tope;
+
+    tope = tope->abajo;
+
+    delete aux;
+}
+NodoProceso* buscarEnListaGlobal(int idProceso) {
+
+    NodoProceso* actual = listaGlobal;
+
+    while (actual != NULL) {
+
+        if (actual->id == idProceso) {
+
+            return actual;
+        }
+
+        actual = actual->siguiente;
+    }
+
+    return NULL;
+}
+void eliminarProceso(int idProceso) {
+
+    NodoProceso* actual = listaGlobal;
+
+    NodoProceso* anterior = NULL;
+
+    while (actual != NULL) {
+
+        if (actual->id == idProceso) {
+
+            if (anterior == NULL) {
+
+                listaGlobal = actual->siguiente;
+            }
+            else {
+
+                anterior->siguiente = actual->siguiente;
+            }
+
+            delete actual;
+
+            return;
+        }
+
+        anterior = actual;
+
+        actual = actual->siguiente;
+    }
+}
+
+void encolarCPU(NodoProceso* proceso) {
+
+    cout << "Proceso encolado segun prioridad: "
+         << proceso->nombre << endl;
+}
+
+void cambiarEstadoProceso(
+    int idProceso,
+    string nuevoEstado
+) {
+
+
+    NodoProceso* proceso =
+        buscarEnListaGlobal(idProceso);
+
+    if (proceso == NULL) {
+
+        cout << "Error: Proceso no encontrado."
+             << endl;
+
+        return;
+    }
+
+    proceso->estado = nuevoEstado;
+
+    if (nuevoEstado == "LISTO") {
+
+        memoria.push(proceso);
+
+        encolarCPU(proceso);
+
+        cout << "Proceso "
+             << proceso->nombre
+             << " paso a estado LISTO."
+             << endl;
+    }
+
+    else if (nuevoEstado == "EJECUCION") {
+
+        cout << "Ejecutando proceso: "
+             << proceso->nombre
+             << endl;
+    }
+
+    else if (nuevoEstado == "TERMINADO") {
+
+        popMemoria();
+
+        eliminarProceso(idProceso);
+
+        cout << "Proceso finalizado y recursos liberados."
+             << endl;
+    }
+}
