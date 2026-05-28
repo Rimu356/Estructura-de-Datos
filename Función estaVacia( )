@@ -1,0 +1,3 @@
+bool estaVacia(){
+return (tope == NULL);
+}
