@@ -1,0 +1,51 @@
+struct Proceso {
+    int id;
+    string nombre;
+};
+
+struct Bloque {
+    Proceso proceso;
+    Bloque* abajo; // Puntero al siguiente bloque hacia el fondo
+};
+
+Bloque* tope = nullptr; 
+
+void mostrarMemoria() {
+    // Si tope == NULL Entonces
+    if (tope == nullptr) {
+        cout << "Memoria vacia (no hay bloques asignados)" << endl;
+        return; // Retornar
+    }
+    
+    Bloque* actual = tope; 
+    
+    cout << "=== Estado actual de la memoria (tope -> fondo) ===" << endl;
+    
+    while (actual != nullptr) {
+        cout << "Bloque asignado a: " << actual->proceso.nombre 
+             << " (ID " << actual->proceso.id << ")" << endl;
+             
+        // actual = actual.abajo
+        actual = actual->abajo; 
+    }
+}
+
+int main() {    
+    cout << "--- Prueba 1: Memoria Vacia ---" << endl;
+    mostrarMemoria();
+    cout << endl;
+
+    Bloque* bloque1 = new Bloque{ {101, "Chrome"}, nullptr };
+    tope = bloque1;
+
+    Bloque* bloque2 = new Bloque{ {102, "Spotify"}, bloque1 };
+    tope = bloque2; // El tope ahora es Spotify
+
+    cout << "--- Prueba 2: Memoria con Bloques ---" << endl;
+    mostrarMemoria();
+
+    delete bloque2;
+    delete bloque1;
+
+    return 0;
+}
