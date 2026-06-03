@@ -1,0 +1,26 @@
+void encolar(NodoProceso* proceso) { // recibe el puntero a insertar
+    if (!proceso == NULL)
+        return;
+    NodoCola* nuevo = new NodoCola; // reserva memoria para un nuevo nodo
+    nuevo->proceso = proceso; // asocia el proceso recibido al nodo recien creado
+    nuevo->siguiente = NULL;
+
+    // Caso 1: cola vacía o nuevo es más prioritario (menor número)
+    if (frente == NULL || proceso->prioridad < frente->proceso->prioridad) {
+        nuevo->siguiente = frente; // hace que el nodo siguiente apunte al frente
+        frente = nuevo; // ahora el nuevo nodo pasa a ser el frente
+        cout << "Proceso " << proceso->nombre << " al frente (prioridad " << proceso->prioridad << ").\n";
+        return;
+    }
+
+    // Caso 2: buscar posición manteniendo orden ascendente
+    NodoCola* actual = frente; // nodo auxiliar para recorrer la cola
+    // Que la prioridad del siguiente sea menor o igual que siga avanzando o que el nodo siguiente sea NULL
+    while (actual->siguiente != NULL && actual->siguiente->proceso->prioridad <= proceso->prioridad) {
+        actual = actual->siguiente; // mueve el puntero al siguiente nodo
+    }
+    // Insertar el nodo
+    nuevo->siguiente = actual->siguiente; // conectar el nodo con el resto de la lista
+    actual->siguiente = nuevo; // hace que el siguiente del nodo actual sea el nuevo
+    cout << "Proceso " << proceso->nombre << " encolado (prioridad " << proceso->prioridad << ").\n";
+}
