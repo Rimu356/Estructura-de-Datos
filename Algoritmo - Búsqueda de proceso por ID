@@ -1,0 +1,9 @@
+NodoProceso* buscarProcesoPorID(int idBuscado) { // NodoProceso* para devolver un puntero a un nodo de tipo NodoProceso
+    NodoProceso* actual = listaGlobal;   // crea un puntero que apunta al primer nodo de la lista
+    while (actual != NULL) { // para recorrer mientras el nodo actual sea valido
+        if (actual->id == idBuscado) // compara el id del nodo actual al que se busca
+            return actual; // devuelve la dirección del nodo buscado
+        actual = actual->siguiente; // avanza al siguiente elemento de la lista
+    }
+    return NULL; // indica que el proceso no existe en la lista
+}
