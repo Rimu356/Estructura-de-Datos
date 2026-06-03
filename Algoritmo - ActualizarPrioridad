@@ -1,0 +1,18 @@
+void actualizarPrioridad(int idProceso, int nuevaPrioridad) {
+    if (nuevaPrioridad < 1 || nuevaPrioridad > 3) { // comprueba que la prioridad este dentro de los valores permitidos
+        cout << "Prioridad debe ser 1,2 o 3.\n";
+        return;
+    }
+    NodoProceso* p = buscarProcesoPorID(idProceso); // llama a la función buscarProcesoPorID y guarda el resultado en p
+    if (!p) { // verifica que se encontro, es como p == NULL
+        cout << "Proceso no encontrado.\n";
+        return;
+    }
+    // Si el proceso está en estado LISTO, reubicarlo en la cola de prioridad
+    if (p->estado == "LISTO") {
+        reubicarProceso(idProceso, nuevaPrioridad);  // reubica si el estado es igual a LISTO
+    } else {
+        p->prioridad = nuevaPrioridad; // actualiza el campo
+        cout << "Prioridad actualizada (no estaba en cola de listos).\n";
+    }
+}
