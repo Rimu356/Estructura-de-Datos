@@ -1,0 +1,22 @@
+// ===========================================================================
+// ESTRUCTURAS DE DATOS DINÁMICAS (desde cero, sin STL)
+// ===========================================================================
+
+struct NodoProceso {
+    int id;
+    string nombre;
+    int prioridad;          // 1 = más alta, 3 = más baja
+    int memoria;            // MB requeridos
+    string estado;          // "NUEVO", "LISTO", "TERMINADO"
+    NodoProceso* siguiente;
+};
+
+struct NodoCola {
+    NodoProceso* proceso;
+    NodoCola* siguiente;
+};
+
+struct NodoPila {
+    NodoProceso* proceso;
+    NodoPila* abajo;
+};
