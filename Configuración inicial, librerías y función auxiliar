@@ -1,0 +1,18 @@
+#include <iostream>   // Para entrada y salida estándar
+#include <string>     // Para manejo de cadenas
+#include <cstdlib>    // Para system("pause") y system("cls") y atoi
+#include <fstream>    // Para manejo de archivos
+#include <sstream>    // Para conversiones string -> número
+#include <ctime>      // Para medir tiempos de ejecución
+
+using namespace std;
+
+// ---------------------------------------------------------------------------
+// FUNCIÓN AUXILIAR: Convierte un string a entero de forma segura
+// ---------------------------------------------------------------------------
+int aInt(const string& s) {
+    stringstream ss(s);   // Crea un flujo de cadena a partir del string recibido
+    int valor;            // Variable donde se almacenará el número convertido
+    ss >> valor;          // Extrae el valor numérico del flujo
+    return valor;         // Devuelve el entero resultante
+}
