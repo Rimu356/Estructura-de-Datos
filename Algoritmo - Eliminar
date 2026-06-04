@@ -1,0 +1,79 @@
+//Eliminar de la Lista global
+void eliminarDeListaGlobal(int id) {
+    NodoProceso* actual = listaGlobal;
+    NodoProceso* anterior = NULL;
+    while (actual != NULL) {
+        if (actual->id == id) {
+            if (anterior == NULL)
+                listaGlobal = actual->siguiente;
+            else
+                anterior->siguiente = actual->siguiente;
+            delete actual;
+            return;
+        }
+        anterior = actual;
+        actual = actual->siguiente;
+    }
+}
+
+//Eliminar de la cola
+void eliminarDeColaCPU(int id) {
+    if (frente == NULL) return;
+    if (frente->proceso->id == id) {
+        NodoCola* aux = frente;
+        frente = frente->siguiente;
+        delete aux;
+        return;
+    }
+    NodoCola* actual = frente;
+    while (actual->siguiente != NULL) {
+        if (actual->siguiente->proceso->id == id) {
+            NodoCola* aux = actual->siguiente;
+            actual->siguiente = actual->siguiente->siguiente;
+            delete aux;
+            return;
+        }
+        actual = actual->siguiente;
+    }
+}
+
+//Eliminar de la memoria
+void eliminarDeMemoria(int id) {
+    if (estaVacia()) return;
+
+    // Si el tope es el que buscamos
+    if (tope->proceso->id == id) {
+        NodoPila* aux = tope;
+        memoriaUsada -= aux->proceso->memoria;
+        tope = tope->abajo;
+        delete aux;
+        return;
+    }
+
+    // Buscar en el resto de la pila
+    NodoPila* actual = tope;
+    while (actual->abajo != NULL) {
+        if (actual->abajo->proceso->id == id) {
+            NodoPila* aux = actual->abajo;
+            memoriaUsada -= aux->proceso->memoria;
+            actual->abajo = actual->abajo->abajo;
+            delete aux;
+            return;
+        }
+        actual = actual->abajo;
+    }
+    cout << "Advertencia: proceso " << id << " no encontrado en memoria.\n";
+}
+
+//Eliminar procesos de forma manual
+void eliminarProcesoManual(int id) {
+    NodoProceso* p = buscarPorID(id);
+    if (p == NULL) {
+        cout << "Proceso no existe.\n";
+        return;
+    }
+    eliminarDeMemoria(id);
+    eliminarDeColaCPU(id);
+    eliminarDeListaGlobal(id);
+    cout << "Proceso " << p->nombre << " eliminado completamente.\n";
+}
