@@ -1,0 +1,24 @@
+// ===========================================================================
+// VARIABLES GLOBALES (estado del sistema)
+// ===========================================================================
+NodoProceso* listaGlobal = NULL;
+NodoCola* frente = NULL;
+NodoPila* tope = NULL;
+int contadorID = 1;
+const int memoriaMaxima = 500;
+int memoriaUsada = 0;
+
+// ---------------------------------------------------------------------------
+// FUNCIONES AUXILIARES
+// ---------------------------------------------------------------------------
+bool estaVacia() {
+    return tope == NULL;
+}
+
+int generarID() {
+    return contadorID++;
+}
+
+bool hayMemoriaDisponible(int memoriaNecesaria) {
+    return (memoriaUsada + memoriaNecesaria <= memoriaMaxima);
+}
